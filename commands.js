@@ -1,4 +1,4 @@
-// process.stdout.write('prompt > ');
+
 
 // process.stdin.on('data', function (data) {
 // 	var cmd = data.toString().trim();
@@ -37,6 +37,10 @@ module.exports = {
 	date: function () {
 		var now = new Date();
 		process.stdout.write(now.toString());
+	},
+
+	echo: function (arr) {
+		process.stdout.write(arr.join(' '));
 	}
 };
 
